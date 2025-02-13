@@ -1,0 +1,74 @@
+.box-model {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    border: 20px solid rgb(75, 75, 255);
+    margin: 50px;
+    border-left: 10px solid red;
+    border-right: 10px solid red;
+
+    box-sizing: border-box;
+}
+
+.relative span {
+    padding: 40px;
+    border: 5px solid gray;
+    margin-right: 20px;
+    background-color: aqua;
+}
+
+.relative {
+    margin-top: 100px;
+}
+
+.relative h3 {
+    margin-bottom: 50px;
+}
+
+.absolute span {
+    padding: 40px;
+    border: 5px solid gray;
+    margin-right: 20px;
+    background-color: rgb(255, 55, 0);
+}
+
+.absolute {
+    margin-top: 100px;
+}
+
+.absolute h3 {
+    margin-bottom: 50px;
+}
+
+.relative span:nth-of-type(2) {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.absolute span:nth-last-of-type(2) {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.block {
+    width: 170px;
+    height: 340px;
+    border: 5px solid gray;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 40px;
+    background-color: aqua;
+    position: relative;
+}
+
+.block span {
+    background-color: red;
+    color: white;
+    position: absolute;
+    top: -12px;
+    left: 225px;
+
+}
